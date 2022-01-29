@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="mt-3 mb-3">
+    <h1>Frequently Asked Questions</h1>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Why Excession?
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>One of my favorite authors is Iain M. Banks.</strong> Particularly his Science Fiction works featuring the "Culture". 
+          His fifth Culture novel was <em>"Excession"</em>. The book is largely about the response of the Culture's Minds (benevolent AIs with enormous intellectual and physical capabilities and distinctive personalities) to the Excession itself and the way in which another society, the Affront, whose systematic brutality horrifies the Culture, tries to use the Excession to increase its power. As in Banks' other Culture novels the main themes are the moral dilemmas that confront a hyperpower and how biological characters find ways to give their lives meaning in a post-scarcity society that is presided over by benign super-intelligent machines.[citation needed] The book features a large collection of Culture ship names, some of which give subtle clues about the roles these ships' Minds play in the story. In terms of style, the book is also notable for the way in which many important conversations between Minds resemble email messages complete with headers.
+          Although Iain M. Banks is dead, his books are fantastic, get a copy of any of his books you will enjoy the read.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          How do I post a blog on your site?
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>Am I able to write a blog post on this site?</strong> Right now this blog is a personal site, and only I can post new articles. If you have a topic you want me to cover, please contact me and I will be happy to research the topic and write a post.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          How often and what topics do you blog about?
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>Short answer - Primarily about Python and Django.</strong> My primary job is Solution Support Engineer with Micro Focus, but I love coding HTML, CSS, and JavaScript along with Python and Django. I've also done some work with Flask, and React. These are the topics I will be covering the most.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
