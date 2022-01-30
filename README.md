@@ -180,14 +180,14 @@ Project Link: [https://github.com/drobb2020/django-example](https://github.com/d
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/drobb2020/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/drobb2020/repo/graphs/contributors
+[contributors-url]: https://github.com/drobb2020/django-example/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/drobb2020/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/drobb2020/repo/network/members
+[forks-url]: https://github.com/drobb2020/django-example/network/members
 [stars-shield]: https://img.shields.io/github/stars/drobb2020/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/drobb2020/repo/stargazers
+[stars-url]: https://github.com/drobb2020/django-example/stargazers
 [issues-shield]: https://img.shields.io/github/issues/drobb2020/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/drobb2020/repo/issues
+[issues-url]: https://github.com/drobb2020/django-example/issues
 [license-shield]: https://img.shields.io/github/license/drobb2020/repo.svg?style=for-the-badge
-[license-url]: https://github.com/drobb2020/repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/drobb2020/django-example/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/drobb2020
