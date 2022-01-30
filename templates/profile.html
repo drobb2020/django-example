@@ -12,14 +12,17 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">{{ author.name }} - {{ author.email }}</h5>
-        <p class="card-text">{{ author.bio }}</p>
+        <h5 class="card-title">{{ author.name }}</h5> 
+        <a href="mailto:drobb2011@gmail.com" style="text-decoration: none; color: #666666;">{{ author.email }}</a>
+        <hr class="dropdown-divider" />
+        <p class="card-text">{{ author.bio|safe }}</p>
+        <hr class="dropdown-divider" />
         <p class="card-text"><small class="text-muted">
-            <a href="{{ author.social_website }}" target="_blank" style="font-size: 3rem;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile Website"><i class="fab fa-font-awesome-alt"></i></a>
-            <a href="{{ author.social_facebook }}" target="_blank" style="font-size: 3rem;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook"><i class="fab fa-facebook-square"></i></a>
-            <a href="{{ author.social_linkedin }}" target="_blank" style="font-size: 3rem;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="{{ author.social_twitter }}" target="_blank" style="font-size: 3rem;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-            <a href="{{ author.social_github }}" target="_blank" style="font-size: 3rem;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github"><i class="fab fa-github-square"></i></a>
+            <a href="{{ author.social_website }}" target="_blank" style="padding-right: .5rem; font-size: 3rem; text-decoration: none; color: #666666;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile Website"><i class="fab fa-font-awesome-alt"></i></a>
+            <a href="{{ author.social_facebook }}" target="_blank" style="padding-right: .5rem; font-size: 3rem; text-decoration: none; color: #666666;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="{{ author.social_linkedin }}" target="_blank" style="padding-right: .5rem; font-size: 3rem; color: #666666;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="{{ author.social_twitter }}" target="_blank" style="padding-right: .5rem; font-size: 3rem; text-decoration: none; color: #666666;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="{{ author.social_github }}" target="_blank" style="padding-right: .5rem; font-size: 3rem; text-decoration: none; color: #666666;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github"><i class="fab fa-github-square"></i></a>
         </small></p>
       </div>
     </div>
@@ -27,3 +30,5 @@
 </div>
 
 {% endblock content %}
+
+style="text-decoration: none; color: black;"

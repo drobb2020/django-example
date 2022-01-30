@@ -2,10 +2,10 @@
 {% load static %}
 {% block content %}
 {% for post in posts %}
-  <div class="card mt-3 mb-3" style="max-width: 900px;">
+  <div class="card mt-3 mb-3" style="max-width: 1100px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="{{ post.post_img.url }}" class="img-fluid rounded-start mt-2" alt="Post Image">
+      <img src="{{ post.post_img.url }}" class="img-fluid rounded-start" alt="Post Image">
     </div>
     <div class="col-md-8">
       <div class="card-body">
