@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('core', '0003_author_social_email_author_social_facebook_and_more'),
+        ('core', '0003_author_social_drobb2011@gmail.com_author_social_facebook_and_more'),
     ]
 
     operations = [

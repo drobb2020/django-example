@@ -5,10 +5,10 @@ from ckeditor.fields import RichTextField
 
 class Author(models.Model):
     name = models.CharField(max_length=250)
-    email = models.CharField(max_length=250)
+    drobb2011@gmail.com = models.CharField(max_length=250)
     bio = RichTextField(null=True, blank=True)
     profile_pic = models.ImageField(upload_to='profile/', null=True, blank=True)
-    social_email = models.CharField(max_length=250, blank=True, null=True)
+    social_drobb2011@gmail.com = models.CharField(max_length=250, blank=True, null=True)
     social_github = models.CharField(max_length=250, blank=True, null=True)
     social_facebook = models.CharField(max_length=250, blank=True, null=True)
     social_linkedin = models.CharField(max_length=250, blank=True, null=True)
@@ -16,7 +16,7 @@ class Author(models.Model):
     social_website = models.CharField(max_length=250, blank=True, null=True)
 
     def __str__(self):
-        return f"{self.name} {self.email}"
+        return f"{self.name} {self.drobb2011@gmail.com}"
 
 
 class Post(models.Model):
