@@ -1,3 +1,4 @@
+<div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -79,6 +80,8 @@
 
 This project was setup to explore django-extensions and lear more about what it can do for me during development.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Built With
 
 * [Django 4.0.1](https://www.djangoproject.com/)
@@ -86,14 +89,20 @@ This project was setup to explore django-extensions and lear more about what it 
 * [Graphviz 0.19.1](https://graphviz.org/)
 * See requirements.txt for a full list
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Prerequisites
 
 You will require graphviz to be installed on your OS before you can use graphviz with Django. Graphviz is available for Windows, MacOS, and Linux distros. Please see the graphviz website for details.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Installation
 
@@ -120,6 +129,8 @@ You will require graphviz to be installed on your OS before you can use graphviz
    pip install -r requirements.txt
    ```
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -134,6 +145,7 @@ My favorite django-extensions are:
 
 * shell_plus
 * dumpscript
+* export_emails
 * generate_password
 * Graph models
 * reset_db
@@ -142,10 +154,73 @@ My favorite django-extensions are:
 
 _For more examples, please refer to the [Documentation](https://django-extensions.readthedocs.io/en/latest/command_extensions.html)_
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Details on the Command Extensions
+
+### shell_plus
+
+* A Django shell with auto-loading of the configured apps database models and subclasses of user-defined classes.
+* You can also exclude models by adding the --dont-load app1 to the command line.
+* Has a built-in collision resolver.
+
+### dumpscript
+
+* Generates a standalone python script that can be used to repopulate the database using objects.
+* Save crucial data when you modify your models.
+* Edit the script to create 1000's of entries using for loops, and generated names.
+
+### export_emails
+
+* Exports the email addresses of registered users in the format you specify.
+* formats are:
+  * address
+  * google
+  * outlook
+  * linkedin
+  * vcard
+* You can use the generated list for a mailer to all your users.
+
+### generate_password
+
+* Generates a new password that you can then use for a user password.
+* Uses the default django password generator.
+* You are able to specify the length of the password by adding the --length=XX switch.
+
+### Graph models
+
+* Renders a graphical representation of your entire project or of a specific application.
+* You need Graphvis installed on the OS, as well as pygraphviz for this to work.
+* Use the GRAPH_MODELS option in settings.py to specify default options.
+
+### reset_db
+
+* Fully resets your current database by running a DROP DATABASE followed by a CREATE DATABASE
+* This is a destructive operation!
+* You will be prompted to confirm the operation.
+
+### runserver_plus
+
+* This is the typical runserver command with the Werkzeug debugger baked in.
+* Requires the Werkzeug package to be installed (Kick ass debugger).
+* Allows you to run your development server over https by specifying the --cert-file option.
+
+### generate_secret_key
+
+* Creates a new secret key that you can put in your settings.py module.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- ROADMAP -->
 ## Roadmap
 
+- [ ] Document the django-extensions I played with
+- [ ] Add full CRUD functionality to demonstration
+- [ ] Add htmx to project
+
 See the [open issues](https://github.com/drobb2020/django-example/issues) for a list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -158,10 +233,14 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -170,24 +249,26 @@ David Robb - [@davidrobb2](https://twitter.com/davidrobb2) - drobb2011@gmail.com
 
 Project Link: [https://github.com/drobb2020/django-example](https://github.com/drobb2020/django-example)
 
-<!-- ACKNOWLEDGEMENTS -->
-<!-- ## Acknowledgements
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* []()
-* []()
-* []() -->
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* [BugBytes](https://www.youtube.com/channel/UCTwxaBjziKfy6y_uWu30orA)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/drobb2020/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/drobb2020/django-example.svg?style=for-the-badge
 [contributors-url]: https://github.com/drobb2020/django-example/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/drobb2020/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/drobb2020/django-example.svg?style=for-the-badge
 [forks-url]: https://github.com/drobb2020/django-example/network/members
-[stars-shield]: https://img.shields.io/github/stars/drobb2020/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/drobb2020/django-example.svg?style=for-the-badge
 [stars-url]: https://github.com/drobb2020/django-example/stargazers
-[issues-shield]: https://img.shields.io/github/issues/drobb2020/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/drobb2020/django-example.svg?style=for-the-badge
 [issues-url]: https://github.com/drobb2020/django-example/issues
-[license-shield]: https://img.shields.io/github/license/drobb2020/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/drobb2020/django-example.svg?style=for-the-badge
 [license-url]: https://github.com/drobb2020/django-example/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/drobb2020
