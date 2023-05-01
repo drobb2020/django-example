@@ -7,7 +7,7 @@ django-ckeditor==6.2.0
 django-extensions==3.1.5
 django-js-asset==1.2.2
 graphviz==0.19.1
-Pillow==9.3.0
+Pillow==9.4.0
 pycodestyle==2.8.0
 pycparser==2.21
 pydot==1.4.2
