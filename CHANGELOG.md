@@ -1,8 +1,22 @@
 # Changelog
 
+## V 1.0.5
+
+### Added or Changed
+
+- Fixed issue where email was replaced with my personal email
+- Updated Pillow to address security vulnerabilities
+- Added flake8, flake8-django, and black
+- Updated various packages, most notably Django (from 4.0.1 to 4.1.8)
+
+### Removed
+
+- Removed autopep8
+
 ## v1.0.4
 
 ### Added or Changed
+
 - Added this changelog :)
 - Added additional details in readme.md
 - Back to top links in Readme

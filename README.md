@@ -117,8 +117,9 @@ You will require graphviz to be installed on your OS before you can use graphviz
    ```sh
    Python3 -m virtualenv env
    ```
+
 3. Activate the virtual environment.
-   
+
    ```sh
    source /env/bin/activate
    ```
@@ -207,16 +208,16 @@ _For more examples, please refer to the [Documentation](https://django-extension
 
 ### generate_secret_key
 
-* Creates a new secret key that you can put in your settings.py module.
+* Creates a new secret key that you can put in your settings.py module, or more appropriately place it in a dot env file.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Document the django-extensions I played with
-- [ ] Add full CRUD functionality to demonstration
-- [ ] Add htmx to project
+* [ ] Document the django-extensions I played with
+* [ ] Add full CRUD functionality to demonstration
+* [ ] Add htmx to project
 
 See the [open issues](https://github.com/drobb2020/django-example/issues) for a list of proposed features (and known issues).
 
