@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+
 from decouple import Csv, config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -45,7 +46,13 @@ INSTALLED_APPS = [
     # 3rd party libraries
     'django_extensions',
     'ckeditor',
+    "crispy_forms",
+    "crispy_bootstrap5",
+    "django_cleanup.apps.CleanupConfig",
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

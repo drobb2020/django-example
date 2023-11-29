@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}| {{ post.title }}{% endblock title %}
+
+{% block content %}
+
+<h1>{{ post.title }}</h1>
+<div class="card my-2">
+  {% if post.post_img %}
+    <img src="{{ post.post_img.url }}" class="card-img-top" alt="Post Image">
+  {% else %}
+    <img src="{% static 'images/default.jpg' %}" alt="Post default image" class="card-img-top" />
+  {% endif %}
+  <div class="card-body">
+    <p class="card-text">{{ post.body|safe }}</p>
+    <p class="card-text"><small class="text-muted">Last updated {{ post.updated|timesince }} ago</small></p>
+    <p class="card-text text-muted">Author: <a href="{% url 'profile' %}" style="text-decoration: none; color: black;">{{ post.author.name }}</a></p>
+  </div>
+  <div class="card-footer d-flex gap-4 py-3">
+    <a href="{% url 'post-update' post.id %}" class="btn btn-primary">Update Post</a>
+    <a href="{% url 'post-delete' post.id %}" class="btn btn-danger">Delete Post</a>
+  </div>
+</div>
+
+{% endblock content %}

@@ -8,7 +8,6 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** drobb2020, django-example, davidrobb2, drobb2011@gmail.com, Django Example - Using Django-Extensions, This project was setup to explore django-extensions and lear more about what it can do for me during development.
 -->
 
 <!-- PROJECT SHIELDS -->
@@ -115,19 +114,20 @@ You will require graphviz to be installed on your OS before you can use graphviz
 2. Create a virtual environment within the project folder.
 
    ```sh
-   Python3 -m virtualenv env
+   Python3 -m virtualenv venv
    ```
 
 3. Activate the virtual environment.
 
    ```sh
-   source /env/bin/activate
+   source /venv/bin/activate
    ```
 
 4. Run pip install.
 
    ```sh
    pip install -r requirements.txt
+   pip install -r requirements-dev.txt
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -215,9 +215,10 @@ _For more examples, please refer to the [Documentation](https://django-extension
 <!-- ROADMAP -->
 ## Roadmap
 
-* [ ] Document the django-extensions I played with
-* [ ] Add full CRUD functionality to demonstration
+* [X] Document the django-extensions I played with
+* [X] Add full CRUD functionality to demonstration
 * [ ] Add htmx to project
+* [ ] Add a CustomUser app to the project and setup login, logout, and register pages.
 
 See the [open issues](https://github.com/drobb2020/django-example/issues) for a list of proposed features (and known issues).
 

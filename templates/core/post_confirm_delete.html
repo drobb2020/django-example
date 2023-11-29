@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}| Delete a Post{% endblock title %}
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+  {% if user.id == post.author.id %}
+
+    <h1 class="mb-4">Delete {{ post.title }}</h1>
+
+    <div class="form-group">
+      <form action="" method="post">
+          {% csrf_token %}
+          <p class="lead">Are you sure you want to delete the post named: {{ post.title }}?</p>
+          {{ form }}
+          <button type="submit" class="btn btn-outline-danger w-100">Confirm</button>
+      </form>
+    </div>
+  {% else %}
+  <p class="lead">You must be the Author to delete this post.</p>
+  {% endif %}
+{% else %}
+  <p class="lead">You must be authenticated to delete this post.</p>
+{% endif %}
+
+{% endblock content %}
